@@ -1,0 +1,91 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Ruiqi Ling</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Jersey City, NJ 
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="New York University, B.A. in Computer Science"
+      subtitle="Jan 2021 to May 2025 at NYU College of Arts and Science"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Work Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Sangfor Technologies, Software Engineer Intern"
+      subtitle="From Jun. 2023 to Aug. 2023 at Sangfor Technologies, Beijing, China"
+    >
+    <ul>
+      <li>- Led data collection, organization, and screening for key team projects, improving data accuracy by 20%, supporting Sangfor’s cloud and network security services.</li>
+      <li>- Conducted website and software vulnerability testing, identifying potential weaknesses in code and helping enhance the security of Sangfor’s core network products and reducing potential risks.</li>
+      <li>- Processed and optimized XML file systems, implementing a structured tagging system for 15+ datasets to streamline data management and accessibility.</li>
+      <li>- Collaborated with cross-functional teams to address identified security issues, contributing to improved overall system
+        reliability and supporting Sangfor’s goal of providing secure IT infrastructure to global clients.
+        </li>
+    </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Lifelong Learning Lab, University of Michigan"
+      subtitle="From Mar. 2023 to Aug. 2024"
+    >
+    <ul>
+      <li>- Collaborated with Professor Xu Wang from the University of Michigan on research focusing on the usability challenges
+        faced by older adults when using mobile apps like Meituan, a popular food delivery service in China.</li>
+      <li>- Conducted a think-aloud study and a survey with 137 participants, identifying key accessibility issues such as confusing icons, cluttered interfaces, and hidden default settings.</li>
+      <li>- Led the design and development of a high-fidelity prototype using Figma, introducing features like simplified interfaces, memory aids, and customizable payment options to enhance usability for older adults.</li>
+      <li>- Evaluated the prototype through user testing, which showed a 30% improvement in task completion speed and user
+        satisfaction.</li>
+      <li>- The research provides actionable insights for developers to improve app accessibility and usability, with broader applications across other digital services aimed at older populations.
+        </li>
+    </ul>    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Publications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Ling, R., & Wang, X. (2024, September). Deriving the Design Requirements to Make Mobile Apps Accessible for Older Adults. Paper presented at the 2024 Intelligent Systems Conference (IntelliSys), Amsterdam, Netherlands.</a>
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Projects</div>
+  </div>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Film reviewing project | Python, pandas, numpy"
+      <ul>
+        <li>Completed under the supervision of a professor at New York University,I used a list of movie reviews to analyze the
+          preferences of people of different genders as well as ages for movies.</li>
+        <li>Build models to predict how people will rate new movies by analyzing previous movies.</li>
+      </ul>
+  </div>
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul>
+    <li>Languages: Java, Python, C++, SQL</li>
+    <li>Databases & Big Data: PostgreSQL, MySQL, MongoDB</li>
+    <li>Tools & Frameworks: pandas, NumPy, Express.js, Bootstrap 5, Handlebars.js</li>
+    <li>Version Control: Git, GitHub</li>
+  </ul>
+</BaseLayout>
